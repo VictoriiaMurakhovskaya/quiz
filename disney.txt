@@ -1,0 +1,19 @@
+name Disney films
+
+q Who is Olaf in Frozen?
+a A snowman
+w A reindeer
+w A prince
+w A dragon
+
+q Which film is 'When You Wish Upon a Star' from?
+a Pinocchio
+w Snow White and the Seven Dwarfs
+w Dumbo
+w Aladdin
+
+q Who did the voice for king Mufasa in The Lion King?
+a James Earl Jones
+w David Ackroyd
+w Christopher Lee
+w Ian McKellen
