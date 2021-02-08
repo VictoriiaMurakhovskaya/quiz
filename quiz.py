@@ -18,8 +18,15 @@ def create_quiz_from_file(filename):
                 quiz = Quiz(data)
             elif command == 'q':
                 text = data
+                int_q = False
+            elif command == 'iq':
+                text = data
+                int_q = True
             elif command == 'a':
-                question = Question(text, data)
+                if int_q:
+                    question = IntQuestion(text, int(data.strip()))
+                else:
+                    question = Question(text, data)
                 quiz.add_question(question)
             elif command == 'w':
                 question.add_wrong(data)
@@ -62,6 +69,16 @@ class Question:
         except ValueError:  # handles value error
             return 0, right_answer
         return users_answer, right_answer
+
+
+class IntQuestion(Question):
+    def ask(self):
+        print(self.question)  # prints question in the console
+        try:  # asks for users choice
+            users_answer = int(input())
+        except ValueError:  # handles value error
+            return 0, self.answer
+        return users_answer, self.answer
 
 
 class Quiz:
@@ -117,4 +134,4 @@ class Quiz:
 
 
 if __name__ == "__main__":
-    create_quiz_from_file('disney.txt').do_until_right()
+    create_quiz_from_file('disney.txt').do()

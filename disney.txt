@@ -17,3 +17,6 @@ a James Earl Jones
 w David Ackroyd
 w Christopher Lee
 w Ian McKellen
+
+iq What year is the movie Bolt from?
+a 2008
