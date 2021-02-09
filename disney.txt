@@ -5,18 +5,27 @@ a A snowman
 w A reindeer
 w A prince
 w A dragon
+w A camel
+w A norwegian
+w An elf
 
 q Which film is 'When You Wish Upon a Star' from?
 a Pinocchio
 w Snow White and the Seven Dwarfs
 w Dumbo
 w Aladdin
+w Last samuray
+w 2 fast and 2 furious
+w Lion King
 
 q Who did the voice for king Mufasa in The Lion King?
 a James Earl Jones
 w David Ackroyd
 w Christopher Lee
 w Ian McKellen
+w Donald Trump
+w Silvestre Stallone
+w Elton John
 
 iq What year is the movie Bolt from?
 a 2008
