@@ -127,7 +127,8 @@ class Question:
             return 0, right_answer
 
         # +1 for chosen answer
-        wa_dict[answers[users_answer - 1]].inc_chosen()
+        if users_answer != right_answer:
+            wa_dict[answers[users_answer - 1]].inc_chosen()
 
         return users_answer, right_answer
 
